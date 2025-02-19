@@ -20,7 +20,3 @@ jobs:
         run: |
           git remote set-url origin https://user:$HF_TOKEN@huggingface.co/spaces/JustCallMeLi/image-to-text
           git push --force origin main
-
-        env:
-          HF_TOKEN: ${{ secrets.HF_IMGTXT_TOKEN }}
-        run: git push --force https://JustCallMeLi:$HF_IMGTXT_TOKEN@huggingface.co/spaces/JustCallMeLi/image-to-text main
