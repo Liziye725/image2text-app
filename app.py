@@ -14,7 +14,7 @@ image = st.sidebar.file_uploader(label = "Upload your image here",type=['png','j
 # Cashe loading - OCR model
 @st.cache
 def load_model(): 
-    reader = ocr.Reader(['en', 'ch'],model_storage_directory='.')
+    reader = ocr.Reader(['en'],model_storage_directory='.')
     return reader 
 
 reader = load_model()
